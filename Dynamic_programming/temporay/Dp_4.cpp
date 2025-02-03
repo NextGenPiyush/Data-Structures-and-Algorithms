@@ -179,8 +179,8 @@ int function_top_down_4(int n, int k, int target){
 int function_bottom_up_4(int n, int k, int target){
     dp_4[0][0] = 1;
     for(int i=1; i<=target; i++) dp_4[0][i] = 0; // don,t need to do this as we have already initialized with zero
-    for(int i=1; i<=n; i++){
-        for(int j=0; j<=target; j++){
+    for(int i=1; i<=n; i++){ // traverse into nummber of dice (rows)
+        for(int j=0; j<=target; j++){ // traverse through number of targets (columns)
             int result = 0;
             for(int a=1; a<=k; a++) if(j-a >= 0) result = (result%mod + dp_4[i-1][j-a]%mod)%mod;
             dp_4[i][j] = result%mod;

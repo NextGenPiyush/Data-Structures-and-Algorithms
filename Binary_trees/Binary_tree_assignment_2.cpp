@@ -110,7 +110,7 @@ vector<vector<int>> zigzag_level_order(TreeNode* root){   // leetcode-103
 }
 
 int diameter_of_binary_tree(TreeNode* root){   // Time complexity O(n)
-    int ans;            // space complexity O(n) call stack 
+    int ans = 0;            // space complexity O(n) call stack 
     helper(root,ans);
     // return ans-1;
     return ans;
