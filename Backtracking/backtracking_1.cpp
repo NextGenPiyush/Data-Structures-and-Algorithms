@@ -105,6 +105,8 @@ void permutation_2(string &str, int i){
     }
 }
 
+
+
 bool canPlaceQueen(int row, int col, int n){
     for(int i=row-1; i>=0; i--) if(grid[i][col]=='Q') return false;  // we are attacked by column
     for(int i=row-1,j=col-1; i>=0 and j>=0; i--,j--) if(grid[i][j]=='Q') return false; // attacked by left_diag
@@ -137,6 +139,8 @@ vector<vector<string>> nQueen(int n){ // Leetcode-51
     func(0,n);
     return result;
 }
+
+
 int ratInMaze(vector<vector<int>> &grid, int n){
     ans = 0;
     f(grid,n,0,0);

@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Piyush Goyal/OneDrive/Desktop/Data_Structures",
-      "program": "c:/Users/Piyush Goyal/OneDrive/Desktop/Data_Structures/build/Debug/outDebug",
+      "cwd": ".",
+      "program": "build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
